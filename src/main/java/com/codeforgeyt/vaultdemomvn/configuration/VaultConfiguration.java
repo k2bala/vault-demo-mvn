@@ -5,25 +5,25 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class VaultConfiguration {
-    @Value("${login}")
-    public String login;
+    @Value("${client_id}")
+    public String clientId;
 
-    @Value("${password}")
-    public String password;
+    @Value("${client_secret}")
+    public String clientSecret;
 
     public String getLogin() {
-        return login;
+        return clientId;
     }
 
     public void setLogin(String login) {
-        this.login = login;
+        this.clientId = login;
     }
 
     public String getPassword() {
-        return password;
+        return clientSecret;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.clientSecret = password;
     }
 }
